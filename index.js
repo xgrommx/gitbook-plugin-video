@@ -10,9 +10,9 @@ function getEmbeddedPlayer(url, height, width){
     var style = "border: none;position: absolute;top: 0;left: 0;width: " + width + ";height: " + height;
 
     if( youtubeUrl ){
-        output = '<iframe style="' + style + '" src="http://www.youtube.com/embed/'+youtubeUrl[1]+'?rel=0" frameborder="0" allowfullscreen>';
+        output = '<iframe style="' + style + '" src="https://www.youtube.com/embed/'+youtubeUrl[1]+'?rel=0" frameborder="0" allowfullscreen>';
     }else if(vimeoUrl){
-        output =  '<iframe style="' + style + '" src="http://player.vimeo.com/video/'+vimeoUrl[3]+'" frameborder="0"></iframe>';
+        output =  '<iframe style="' + style + '" src="https://player.vimeo.com/video/'+vimeoUrl[3]+'" frameborder="0"></iframe>';
     }else{
         output = '<p>No video url found - vimeo and youtube supported</p>';
     }
